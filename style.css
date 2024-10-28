@@ -1,0 +1,38 @@
+
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+   
+   
+}
+
+.dform {
+    width: 33%;
+    margin: 3%;
+    border: 1px;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: lightpink;
+    justify-content: space-between;
+    
+}
+
+
+.number {
+    margin-bottom: 5%;
+    flex:1;
+    font-size: 17px;
+    width: 98%;
+}
+
+.result {
+    margin-bottom: 7%;
+    font-size: 17px;
+    width: 98%;
+}
+
+.header{ 
+    text-align: center;
+}
