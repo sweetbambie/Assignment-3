@@ -6,6 +6,7 @@
     <meta name="'viewport", content="width=device-width, initial-scale=1.0"/>
     <title>Math Toolbox</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="scrip.js"></script>
 </head>
 
 <body>
@@ -15,19 +16,21 @@
 
         <form>
             <label for="sideA"> Side A:</label><br>
-            <input class="number" id="sideA" name="sideA" ><br>
+            <input class="number" id="sideA" name="sideA" required><br>
 
             <label for="sideB"> Side B:</label><br>
-            <input class="number" id="sideB" name="sideB"> <br>
+            <input class="number" id="sideB" name="sideB" required> <br>
 
-            <label for="angleC"> Angle C:</label><br>
-            <input class="number" id="angleC" name="angleC"> <br>
+            <label for="angleC"> Angle C (in degrees):</label><br>
+            <input class="number" id="angleC" name="angleC" required> <br>
 
             <label for="sideC"> Side C (Result):</label><br>
             <input class="result" id="sideC" name="sideC" readonly> <br>
 
-            <button class="Calculate"> Calculate </button>
+            <button class="Calculate" type="submit" onclick="cosineLaw()"> Calculate </button>
+
         </form>
+
     </div>
 
     <div id="Asymptote"  class="dform">
@@ -35,7 +38,7 @@
 
         <form>
             <label for="mvalue"> m Value:</label><br>
-            <input class="number" id="aside" name="aside" ><br>
+            <input class="number" id="mvalue" name="mvalue" ><br>
 
             <label for="nvalue"> n Value:</label><br>
             <input class="number" id="nvalue" name="nvalue"> <br>
@@ -43,7 +46,7 @@
             <label for="atype"> Asymptote Type (Result):</label><br>
             <input class="result" id="atype" name="atype" readonly> <br>
 
-            <button class="Calculate"> Calculate </button>
+            <button class="Calculate" type="submit" onclick="asymptoteFinder ()"> Calculate </button>
         </form>
     </div>
 
@@ -63,3 +66,4 @@
 
 </body>
 </html>
+
