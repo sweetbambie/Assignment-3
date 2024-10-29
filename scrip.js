@@ -104,9 +104,24 @@ function asymptoteFinder () {
 
 
 function piApprox (){
-    for (let i =0; i ≤ n, i++){
-        
-    }
-}
 
+    if(event) {
+        event.preventDefault()
+    }
+
+    let pi = 0;
+
+    var n = parseFloat(document.getElementById ('aside').value);
+
+    for (let i =0; i <= n; i++){
+
+        pi += ( Math.pow(-1, i) ) / (( 2*i ) + 1)
+    }
+
+    pi = pi * 4
+    
+
+    document.getElementById('piapprox').value = pi;
+        
+}
 
