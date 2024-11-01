@@ -1,69 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="'viewport", content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Math Toolbox</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="scrip.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <div class="grid-container">
+        <div id="CosineLaw" class="dform">
+            <h2 class="header">Cosine Law</h2>
+            <form>
+                <label  class="lable" for="sideA">Side A:</label><br>
+                <input class="number" id="sideA" name="sideA" required><br>
 
-    <div id="CosineLaw" class="dform">
-        <h2 class="header">Cosine Law </h2>
+                <label  class="lable" for="sideB">Side B:</label><br>
+                <input class="number" id="sideB" name="sideB" required><br>
 
-        <form>
-            <label for="sideA"> Side A:</label><br>
-            <input class="number" id="sideA" name="sideA" required><br>
+                <label  class="lable" for="angleC">Angle C (in degrees):</label><br>
+                <input class="number" id="angleC" name="angleC" required><br>
 
-            <label for="sideB"> Side B:</label><br>
-            <input class="number" id="sideB" name="sideB" required> <br>
+                <label  class="lable" for="sideC">Side C (Result):</label><br>
+                <input class="number" id="sideC" name="sideC" readonly><br>
 
-            <label for="angleC"> Angle C (in degrees):</label><br>
-            <input class="number" id="angleC" name="angleC" required> <br>
+                <button class="Calculate" type="button" onclick="cosineLaw()">Calculate</button>
+            </form>
+        </div>
 
-            <label for="sideC"> Side C (Result):</label><br>
-            <input class="result" id="sideC" name="sideC" readonly> <br>
+        <div id="Asymptote" class="dform">
+            <h2 class="header">Asymptote Finder</h2>
+            <form>
+                <label for="mvalue">m Value:</label><br>
+                <input class="number" id="mvalue" name="mvalue"><br>
 
-            <button class="Calculate" type="submit" onclick="cosineLaw()"> Calculate </button>
+                <label  for="nvalue">n Value:</label><br>
+                <input class="number" id="nvalue" name="nvalue"><br>
 
-        </form>
+                <label  for="atype">Asymptote Type (Result):</label><br>
+                <input class="number" id="atype" name="atype" readonly><br>
 
+                <button class="Calculate" type="button" onclick="asymptoteFinder()">Calculate</button>
+            </form>
+        </div>
+
+        <div id="Gregory-Leibniz" class="dform">
+            <h2 class="header">Gregory-Leibniz Pi Approximation</h2>
+            <form>
+                <label for="nvalue">n Value:</label><br>
+                <input class="number" id="Nvalue" name="nvalue"><br>
+
+                <label for="piapprox">Pi Approximation (Result):</label><br>
+                <input class="number" id="piapprox" name="piapprox" readonly><br>
+
+                <button class="Calculate" type="button" onclick="piApprox()">Calculate</button>
+            </form>
+        </div>
     </div>
-
-    <div id="Asymptote"  class="dform">
-        <h2 class="header">Asymptote Finder</h2>
-
-        <form>
-            <label for="mvalue"> m Value:</label><br>
-            <input class="number" id="mvalue" name="mvalue" ><br>
-
-            <label for="nvalue"> n Value:</label><br>
-            <input class="number" id="nvalue" name="nvalue"> <br>
-
-            <label for="atype"> Asymptote Type (Result):</label><br>
-            <input class="result" id="atype" name="atype" readonly> <br>
-
-            <button class="Calculate" type="submit" onclick="asymptoteFinder ()"> Calculate </button>
-        </form>
-    </div>
-
-    <div id="Gregory-Leibniz"  class="dform">
-        <h2 class="header">Gregory-Leibniz Pi Approximation</h2>
-
-        <form>
-            <label for="nvalue"> n Value:</label><br>
-            <input class="number" id="aside" name="aside" ><br>
-
-            <label for="piapprox"> Pi Approximation (Result):</label><br>
-            <input class="result" id="piapprox" name="piapprox" readonly> <br>
-            
-            <button class="Calculate" type="submit" onclick="piApprox ()"> Calculate </button>
-        </form>
-    </div>
-
 </body>
-</html>
 
+</html>
