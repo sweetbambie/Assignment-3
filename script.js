@@ -102,11 +102,11 @@ function piApprox() {
     let pi = 0;
     var n = parseFloat(document.getElementById('Nvalue').value);
 
-    // if (isNaN(n)) {
-    //     alert("Please enter a valid numbers for n Value.");
-    //     return;
-    // }
-
+    if (isNaN(n)) {
+        alert("Please enter a valid numbers for n Value.");
+        return;
+    }
+    
     for (let i = 0; i <= n; i++) {
         pi += (Math.pow(-1, i)) / ((2 * i) + 1);
     }
