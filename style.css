@@ -14,7 +14,7 @@ body {
     grid-template-columns: repeat(2, 1fr); 
     gap: 10%; 
     width: 80%; 
-    
+    margin-bottom: 8%;
 }
 
 .dform {
